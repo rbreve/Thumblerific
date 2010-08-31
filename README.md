@@ -7,17 +7,17 @@ It works like this
 
 Say you find a hosted image 
 
-http://somesite.com/image.jpg
+    http://somesite.com/image.jpg
 
 with thumblerific you could make thumbnails for that image like this
 
-http://thumblerific.appsppot.com/t?image_url=http://somesite.com/image.jpg&width=90
+    http://thumblerific.appsppot.com/t?image_url=http://somesite.com/image.jpg&amp;width=90
 
-This will return a 90px thumbnail. This will allow you to make thumbnails on the fly from your html, calling the <img> tag.
+This will return a 90px thumbnail. This will allow you to make thumbnails on the fly from your html, calling the &lt;img&gt; tag.
 
 Its that easy and simple.
 
-You can check a demo here: http://thumblerific.appspot.com
+You can check a [demo here](http://thumblerific.appspot.com)
 
 ##INSTALL##
 
