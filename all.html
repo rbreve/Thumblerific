@@ -1,0 +1,10 @@
+<h2>Images</h2>
+
+
+
+
+<ul>
+	{%for image in images%}
+	<li> <img src="/i/{{image.name}}">  <a href="{{image.url}}">{{image.url}}</a>
+	{%endfor%}
+</ul>

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block body %}
+
+ 
+
+<h2>Generated Thumbnail</h2>
+<p>
+<img src="/t?image_url={{image_url}}&width={{width}}">
+<div>
+Direct Link:
+<input type="text" value="http://thumblerific.appspot.com/t?image_url={{image_url}}&width={{width}}" size="100">
+</div>
+
+<div>
+Tiny Link:
+<input type="text" value="http://thumblerific.appspot.com/i/{{name}}" size="100">
+</div>
+
+<div>
+HTML:
+<input type="text" value="&lt;img src=&quot;http://thumblerific.appspot.com/i/{{name}}&quot;&gt;" size="100">
+</div>
+
+
+</p>	
+ 
+{% endblock %}

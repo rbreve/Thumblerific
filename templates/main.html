@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block body %}
+ 
+<h2>Make thumbnails fast!</h2>
+<p>Thumblerific is a small application built under Google App Engine that will generate thumbnails from Images hosted in other sites. Given a Image URL, Thumblerific will create a thumbnail. 
+</p>
+<p>Thumblerific only works with jpeg, gif and png images, it will *not* make thumbnails for web pages,  for that you can use 
+	<a href="http://www.websnapr.com/">Web Snapr</a>, <a href="http://webthumb.bluga.net/home">Web Thumb</a> or 	
+	<a href="http://www.thumbalizr.com/">Thumbalizr</a>.</p>
+<h2>Try it</h2>
+<p>
+	<form method="get" action="/thumbnail">
+
+	Image Url: <input type="text" name="image_url" size="40">	Width: <select name="width">
+			<option value="60">60px
+			<option  value="120">120px
+			<option value="300">300px
+			<option value="600">600px
+		</select>
+	<input type="submit" value="Thumbnail it!">
+	<div class="example">ie: http://www.site.com/image.jpg or .png or .gif</div>
+</form>
+
+<h3>or</h3>
+<p>
+          <form action="/t" enctype="multipart/form-data" method="post">
+            
+<div>Upload Image: <input type="file" name="image"/>
+	Width: <select name="width">
+			<option value="60">60px
+			<option  value="120">120px
+			<option value="300">300px
+			<option value="600">600px
+		</select>
+			<input type="submit" value="Thumbnail it!">
+			</div>
+ 
+          </form>
+</p>
+
+<h2>API Usage</h2>
+<p>
+	Make instant thumbnails for your  blogs, forum or any other web application just call it like this. The width parameter can be from 20px to 1200 px.
+	In the image_url parameter include a valid Image URL.
+	<div class="code">
+	&lt;img src="http://thumblerific.appspot.com/t?image_url=<strong>http://www.site.com/image.jpg</strong>&width=90"&gt;
+	</div>
+</p>	
+<h2>Follow/Contact</h2>
+<p> Twitter: <a href="http://twitter.com/rbreve">rbreve</a> <Br/>
+	Flickr: <a href="http://flickr.com/photos/breve">breve</a> <br/>
+	Email: rbreve at gmail dot com <br/>	
+	</p>
+{% endblock %}

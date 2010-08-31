@@ -1,0 +1,23 @@
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #FFF;
+}
+
+.code{background-color:#efefef; padding:5px; font-family:courier; width:780px; font-size:13px;}
+
+.example{font-style: italic; font-size:10px;}
+
+a {
+	text-decoration: none;
+	color: #79aab6;
+}
+
+h1{
+	font-size: 40px;
+	letter-spacing: 3px;
+}
+
+#wrapper{
+	padding:5px;
+ 
+}
