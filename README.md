@@ -11,9 +11,9 @@ Say you find a hosted image
 
 with thumblerific you could make thumbnails for that image like this
 
-    http://thumblerific.appsppot.com/t?image_url=http://somesite.com/image.jpg&amp;width=90
-
-This will return a 90px thumbnail. This will allow you to make thumbnails on the fly from your html, calling the &lt;img&gt; tag.
+    http://thumblerific.appsppot.com/t?image_url=http://somesite.com/image.jpg&width=90
+    
+This will return a thumbnail. This will allow you to make thumbnails on the fly from your html, calling the &lt;img&gt; tag.
 
 Its that easy and simple.
 
